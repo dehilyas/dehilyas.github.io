@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEHMECH MOHAMMED ILYAS — Crypto &amp; Web3 Enthusiast</title>
+<meta name="description" content="Portfolio of DEHMECH MOHAMMED ILYAS, a Crypto &amp; Web3 enthusiast from Algeria exploring blockchain infrastructure, DeFi, Ethereum, Layer 2 networks and on-chain data.">
+<meta name="author" content="DEHMECH MOHAMMED ILYAS">
+<meta name="theme-color" content="#050508">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DEHMECH MOHAMMED ILYAS — Crypto &amp; Web3 Enthusiast">
+<meta property="og:description" content="Understanding the infrastructure. Exploring the evolution. Following the next phase of Web3.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23050508'/%3E%3Cpath d='M16 5l9 11-9 11-9-11z' fill='none' stroke='%23a855f7' stroke-width='2'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#050508;--surface:#0c0c14;--surface-2:#12121d;--line:rgba(168,85,247,.22);--line-soft:rgba(255,255,255,.07);--text:#ececf6;--muted:#9b9bb2;--purple:#a855f7;--purple-deep:#7c3aed;--green:#34d399;--radius:18px;--font:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 var(--font);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(60rem 30rem at 85% -5%,rgba(124,58,237,.18),transparent 60%),radial-gradient(40rem 25rem at 0% 60%,rgba(52,211,153,.05),transparent 60%)}
+a{color:inherit}
+h1,h2,h3,p{margin:0}
+:focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:6px}
+.container{width:min(1120px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:8px;background:var(--purple);color:#fff;padding:8px 14px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+/* header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(5,5,8,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line-soft)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;letter-spacing:.02em;font-size:.95rem}
+.brand-mark{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:linear-gradient(135deg,var(--purple-deep),var(--purple));box-shadow:0 0 18px rgba(168,85,247,.45);font-size:.72rem}
+.nav{display:flex;gap:6px}
+.nav a{text-decoration:none;color:var(--muted);padding:8px 14px;border-radius:999px;font-size:.92rem;transition:color .2s,background .2s}
+.nav a:hover{color:var(--text);background:rgba(168,85,247,.12)}
+.menu-btn{display:none;background:var(--surface-2);border:1px solid var(--line);color:var(--text);width:44px;height:44px;border-radius:12px;cursor:pointer;font-size:1.2rem}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 26px;border-radius:999px;font:600 .95rem var(--font);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s,border-color .2s}
+.btn-primary{background:linear-gradient(135deg,var(--purple-deep),var(--purple));color:#fff;box-shadow:0 0 24px rgba(168,85,247,.35)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 0 34px rgba(168,85,247,.55)}
+.btn-ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.02)}
+.btn-ghost:hover{border-color:var(--green);color:var(--green);transform:translateY(-2px)}
+/* hero */
+.hero{position:relative;min-height:calc(100vh - 68px);display:flex;align-items:center;padding:72px 0;overflow:hidden}
+#net{position:absolute;inset:0;width:100%;height:100%;opacity:.7;z-index:0;pointer-events:none}
+.hero .container{position:relative;z-index:1}
+.hero-inner{max-width:780px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.85rem;background:rgba(168,85,247,.07)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green)}
+.hero h1{font-size:clamp(2.5rem,7vw,4.9rem);line-height:1.05;letter-spacing:-.035em;margin:24px 0 20px;background:linear-gradient(120deg,#fff 20%,#d8b4fe 55%,var(--purple) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{font-size:clamp(1.1rem,2.4vw,1.4rem);color:var(--green);line-height:1.5;max-width:640px}
+.intro{margin-top:22px;color:var(--muted);max-width:640px;font-size:1.05rem}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+/* sections */
+section{padding:96px 0}
+.sec-head{max-width:640px;margin-bottom:44px}
+.sec-head h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.025em;line-height:1.15}
+.sec-head p{color:var(--muted);margin-top:12px}
+.sec-head::after{content:"";display:block;width:56px;height:3px;border-radius:3px;margin-top:20px;background:linear-gradient(90deg,var(--purple),var(--green))}
+.card{background:linear-gradient(180deg,var(--surface-2),var(--surface));border:1px solid var(--line-soft);border-radius:var(--radius);padding:28px;transition:border-color .25s,box-shadow .25s,transform .25s}
+.card:hover{border-color:var(--line);box-shadow:0 0 32px rgba(168,85,247,.12);transform:translateY(-3px)}
+.grid{display:grid;gap:20px}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card h3{font-size:1.15rem;margin:16px 0 10px}
+.card p{color:var(--muted);font-size:.96rem}
+.icon{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;border:1px solid var(--line);background:rgba(168,85,247,.1);color:var(--purple)}
+.icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.card:hover .icon{color:var(--green);border-color:rgba(52,211,153,.4)}
+/* about */
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;align-items:start}
+.about-text p+p{margin-top:18px}
+.about-text p{color:#c3c3d6}
+.themes{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:12px}
+.themes li{display:flex;gap:12px;color:var(--muted);font-size:.94rem;line-height:1.5}
+.themes li::before{content:"";flex:none;width:7px;height:7px;margin-top:8px;border-radius:50%;background:var(--green)}
+.themes strong{color:var(--text);font-weight:600}
+/* project */
+.demo{border:1px solid var(--line);border-radius:24px;padding:clamp(18px,3vw,36px);background:linear-gradient(180deg,rgba(18,18,29,.9),rgba(8,8,13,.95));box-shadow:0 0 60px rgba(124,58,237,.1)}
+.demo-top{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;margin-bottom:22px}
+.tag{font:500 .8rem var(--mono);padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:#d8b4fe;background:rgba(168,85,247,.08)}
+.tag.warn{color:var(--green);border-color:rgba(52,211,153,.35);background:rgba(52,211,153,.07)}
+.demo h3{font-size:1.5rem;letter-spacing:-.01em}
+.demo-lead{color:var(--muted);margin:8px 0 24px;max-width:700px}
+.ctrl-label{font-size:.85rem;color:var(--muted);margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.chip{background:var(--surface);color:var(--muted);border:1px solid var(--line-soft);border-radius:999px;padding:9px 18px;font:500 .9rem var(--font);cursor:pointer;transition:all .2s}
+.chip:hover{color:var(--text);border-color:var(--line)}
+.chip[aria-pressed="true"]{color:#fff;background:rgba(168,85,247,.22);border-color:var(--purple);box-shadow:0 0 16px rgba(168,85,247,.3)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:20px}
+.kpi{text-align:left;font:inherit;color:inherit;background:var(--surface);border:1px solid var(--line-soft);border-radius:14px;padding:16px 18px;cursor:pointer;transition:all .2s}
+.kpi:hover{border-color:var(--line)}
+.kpi[aria-pressed="true"]{border-color:var(--green);box-shadow:0 0 18px rgba(52,211,153,.15)}
+.kpi small{display:block;color:var(--muted);font-size:.8rem}
+.kpi b{display:block;font-size:1.55rem;margin-top:4px;letter-spacing:-.02em}
+.viz{display:grid;grid-template-columns:1.2fr 1fr;gap:16px}
+.panel{background:var(--surface);border:1px solid var(--line-soft);border-radius:14px;padding:18px;min-width:0}
+.panel h4{margin:0 0 14px;font-size:.92rem;font-weight:600;color:#d8b4fe}
+#trend{width:100%;height:auto;display:block}
+.axis{font:10px var(--mono);fill:#7b7b92}
+.row{display:grid;grid-template-columns:110px 1fr auto;gap:12px;align-items:center;width:100%;background:none;border:0;color:inherit;font:inherit;padding:8px 6px;border-radius:10px;cursor:pointer;text-align:left}
+.row:hover{background:rgba(168,85,247,.07)}
+.row[aria-pressed="true"]{background:rgba(52,211,153,.07)}
+.row span:first-child{font-size:.88rem;color:var(--muted)}
+.row[aria-pressed="true"] span:first-child{color:var(--text)}
+.track{height:10px;border-radius:6px;background:rgba(255,255,255,.06);overflow:hidden}
+.fill{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--purple-deep),var(--purple));transition:width .5s}
+.row[aria-pressed="true"] .fill{background:linear-gradient(90deg,var(--purple),var(--green))}
+.row em{font:normal .8rem var(--mono);color:var(--muted);min-width:80px;text-align:right}
+.concepts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}
+.concept{border:1px solid var(--line-soft);border-radius:14px;padding:16px;font-size:.9rem;color:var(--muted);transition:border-color .3s,background .3s}
+.concept strong{display:block;color:var(--text);margin-bottom:4px}
+.concept.on{border-color:rgba(52,211,153,.5);background:rgba(52,211,153,.05)}
+.note{font-size:.88rem;color:var(--muted);border-left:3px solid var(--purple);padding:4px 0 4px 14px;margin-top:6px}
+.num{display:inline-block;font:500 .78rem var(--mono);color:var(--green);margin-bottom:2px}
+/* contact */
+.contact{text-align:center;border:1px solid var(--line);border-radius:28px;padding:clamp(36px,6vw,72px) 24px;background:radial-gradient(40rem 16rem at 50% 0,rgba(168,85,247,.16),transparent 70%),var(--surface)}
+.contact h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-.025em}
+.contact p{color:var(--muted);max-width:520px;margin:14px auto 30px}
+.contact .cta{justify-content:center;margin:0}
+footer{padding:32px 0 44px;color:var(--muted);font-size:.85rem;text-align:center;border-top:1px solid var(--line-soft)}
+footer p+p{margin-top:6px;font-size:.8rem}
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}
+.js .reveal.in{opacity:1;transform:none}
+/* responsive */
+@media(max-width:980px){.g4{grid-template-columns:repeat(2,1fr)}.about,.viz{grid-template-columns:1fr}.g3{grid-template-columns:1fr}}
+@media(max-width:760px){
+.menu-btn{display:block}
+.nav{position:absolute;top:68px;left:0;right:0;flex-direction:column;padding:12px 20px 20px;background:rgba(5,5,8,.97);border-bottom:1px solid var(--line);display:none}
+.nav.open{display:flex}
+.nav a{padding:14px}
+section{padding:72px 0}
+.kpis,.concepts,.g4{grid-template-columns:1fr}
+.row{grid-template-columns:90px 1fr auto}
+.btn{width:100%}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.js .reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href="#top" aria-label="DEHMECH MOHAMMED ILYAS — back to top"><span class="brand-mark" aria-hidden="true">DMI</span>DEHMECH MOHAMMED ILYAS</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation menu">☰</button>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#about">About</a><a href="#interests">Interests</a><a href="#project">Project</a><a href="#research">Research</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="container">
+    <div class="hero-inner">
+      <span class="pill"><span class="dot" aria-hidden="true"></span>Algeria · Crypto &amp; Web3</span>
+      <h1>Crypto &amp; Web3 Enthusiast</h1>
+      <p class="sub">Understanding the infrastructure. Exploring the evolution. Following the next phase of Web3.</p>
+      <p class="intro">I’m DEHMECH MOHAMMED ILYAS, deeply interested in the systems reshaping digital ownership, decentralized finance, and the future of blockchain technology. I follow the ideas, infrastructure, and on-chain innovations driving the evolution of Web3.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#interests">Explore My Interests</a>
+        <a class="btn btn-ghost" href="#contact">Connect With Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="sec-head reveal"><h2>About Me</h2></div>
+    <div class="about">
+      <div class="about-text reveal">
+        <p>Blockchains are best understood as infrastructure: networks that let strangers agree on shared state without a central operator. I’m drawn to how that foundation, with its consensus rules and incentive design, shapes everything built above it, and how protocols, networks, and digital assets depend on one another.</p>
+        <p>In decentralized finance, I find the mechanics the most revealing part: automated market makers replacing order books, lending markets setting rates algorithmically, and liquidity acting as the lifeblood that makes all of it usable. Smart contracts are what turn those ideas into open, composable applications.</p>
+        <p>I also care about reading the evidence. On-chain activity is public, which makes it possible to study how ecosystems actually behave, and the steady progress of Layer 2 scaling shows how the technology is adapting to real demand. These are areas I keep exploring, and I’m committed to going deeper.</p>
+      </div>
+      <aside class="card reveal" aria-label="Areas of focus">
+        <h3 style="margin-top:0">Areas of ongoing exploration</h3>
+        <ul class="themes">
+          <li><span><strong>Infrastructure:</strong> decentralization and how networks stay secure.</span></li>
+          <li><span><strong>Protocols &amp; assets:</strong> how networks, protocols, and tokens relate.</span></li>
+          <li><span><strong>DeFi &amp; liquidity:</strong> mechanisms behind on-chain finance.</span></li>
+          <li><span><strong>Smart contracts:</strong> the logic layer of Web3 applications.</span></li>
+          <li><span><strong>On-chain data:</strong> reading ecosystems through public activity.</span></li>
+          <li><span><strong>Scaling:</strong> the evolution of Layer 2 networks.</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="interests">
+  <div class="container">
+    <div class="sec-head reveal"><h2>Interests</h2><p>The four areas I follow most closely.</p></div>
+    <div class="grid g4">
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="8.5" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4M6.5 10v2.5a1 1 0 0 0 1 1H9M17.5 10v2.5a1 1 0 0 1-1 1H15"/></svg></div>
+        <h3>Blockchain</h3><p>Exploring decentralized infrastructure, consensus mechanisms, network security, and the architecture behind trust-minimized systems.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.8 9.2c-.4-1-1.4-1.5-2.8-1.5-1.6 0-2.7.8-2.7 2 0 3 5.6 1.2 5.6 4.1 0 1.2-1.1 2.2-2.9 2.2-1.5 0-2.6-.6-3-1.8M12 6v1.7M12 16.8v1.4"/></svg></div>
+        <h3>Cryptocurrency</h3><p>Following digital asset ecosystems, market structure, token utility, and the relationship between technology, adoption, and liquidity.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h13l-3-3M20 16H7l3 3"/><circle cx="12" cy="12" r="1.2"/></svg></div>
+        <h3>DeFi</h3><p>Exploring decentralized exchanges, automated market makers, lending protocols, liquidity provision, and the mechanisms that power on-chain finance.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg></div>
+        <h3>Web3</h3><p>Understanding decentralized applications, smart contracts, digital ownership, and the infrastructure enabling more open internet experiences.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="project">
+  <div class="container">
+    <div class="sec-head reveal"><h2>Featured Project</h2><p>A small interactive concept built to practice reading blockchain metrics.</p></div>
+    <div class="demo reveal">
+      <div class="demo-top">
+        <span class="tag">Interactive Concept · Personal Research Prototype</span>
+        <span class="tag warn">Illustrative Demo — Not Live Market Data</span>
+      </div>
+      <h3>On-Chain Intelligence Dashboard</h3>
+      <p class="demo-lead">Compare three fictional networks. Select a network or a metric to see how the same ecosystem reads differently depending on what you measure. All values are invented for illustration.</p>
+
+      <div class="ctrl-label" id="netLabel">Network</div>
+      <div class="chips" role="group" aria-labelledby="netLabel" id="netChips"></div>
+
+      <div class="ctrl-label">Metric <span style="opacity:.7">(select a card)</span></div>
+      <div class="kpis" id="kpis" role="group" aria-label="Metric selector"></div>
+
+      <div class="viz">
+        <div class="panel"><h4 id="trendTitle">Trend</h4><svg id="trend" viewBox="0 0 320 150" role="img" aria-label="Illustrative trend chart"></svg></div>
+        <div class="panel"><h4 id="cmpTitle">Network comparison</h4><div id="cmp"></div></div>
+      </div>
+
+      <div class="concepts" id="concepts">
+        <div class="concept" data-m="tvl"><strong>TVL</strong>The value of assets deposited in a network’s protocols. It shows capital committed, and it moves with token prices as well as deposits.</div>
+        <div class="concept" data-m="st"><strong>Liquidity</strong>How easily assets can be swapped or borrowed without large price impact. Stablecoin supply is one rough proxy for available liquidity, not a measure of it.</div>
+        <div class="concept" data-m="act"><strong>Network activity</strong>How much the network is used, such as active addresses or transactions. High activity can exist with low TVL, and the reverse.</div>
+      </div>
+      <p class="note">This prototype shows my interest in on-chain analytics and in understanding what blockchain metrics do and do not tell us. It has no wallet connection, no live data, and collects no information.</p>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="container">
+    <div class="sec-head reveal"><h2>Research Areas</h2><p>Topics I’m actively exploring and learning more about.</p></div>
+    <div class="grid g3">
+      <article class="card reveal"><span class="num">Ongoing interest</span><h3 style="margin-top:6px">DeFi Mechanics &amp; Liquidity</h3><p>How automated market makers price assets, how lending markets set rates, and why depth of liquidity shapes everything from slippage to protocol resilience.</p></article>
+      <article class="card reveal"><span class="num">Ongoing interest</span><h3 style="margin-top:6px">Layer 2 Scaling &amp; Blockchain Infrastructure</h3><p>The design trade-offs of rollups and other scaling approaches, and how they relate to the security and decentralization of the networks beneath them.</p></article>
+      <article class="card reveal"><span class="num">Ongoing interest</span><h3 style="margin-top:6px">Tokenomics &amp; On-Chain Metrics</h3><p>How supply schedules, incentives, and utility interact, and how public on-chain data can be used to study them without overreading a single number.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact reveal">
+      <h2>Let’s connect</h2>
+      <p>Always glad to exchange ideas about Web3, DeFi, and the infrastructure behind them.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://x.com/ilyas_med_deh" target="_blank" rel="noopener noreferrer" aria-label="X profile of ilyas_med_deh (opens in a new tab)">Follow on X</a>
+        <a class="btn btn-ghost" href="https://github.com/dehilyas" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile of dehilyas (opens in a new tab)">View GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 DEHMECH MOHAMMED ILYAS · Algeria</p>
+    <p>Personal portfolio for educational purposes. Nothing here is financial advice.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+document.documentElement.classList.add("js");
+var $=function(s){return document.querySelector(s)};
+var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* Mobile menu */
+var btn=$("#menuBtn"),nav=$("#nav");
+function setMenu(o){nav.classList.toggle("open",o);btn.setAttribute("aria-expanded",o);btn.textContent=o?"✕":"☰"}
+btn.addEventListener("click",function(){setMenu(!nav.classList.contains("open"))});
+nav.addEventListener("click",function(e){if(e.target.tagName==="A")setMenu(false)});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")setMenu(false)});
+
+/* Reveal on scroll */
+var items=document.querySelectorAll(".reveal");
+if("IntersectionObserver" in window&&!reduce){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
+  items.forEach(function(el){io.observe(el)});
+}else{items.forEach(function(el){el.classList.add("in")})}
+
+/* Hero background: subtle blockchain network */
+var cv=$("#net"),cx=cv.getContext("2d"),W,H,P=[];
+function size(){
+  var r=cv.parentElement.getBoundingClientRect(),d=Math.min(window.devicePixelRatio||1,2);
+  W=r.width;H=r.height;cv.width=W*d;cv.height=H*d;cx.setTransform(d,0,0,d,0,0);
+  P=[];for(var i=0;i<Math.min(48,Math.floor(W/26));i++)P.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.28,vy:(Math.random()-.5)*.28});
+  draw(false);
+}
+function draw(step){
+  cx.clearRect(0,0,W,H);
+  P.forEach(function(p){
+    if(step){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1}
+  });
+  for(var i=0;i<P.length;i++){
+    for(var j=i+1;j<P.length;j++){
+      var dx=P[i].x-P[j].x,dy=P[i].y-P[j].y,d=Math.sqrt(dx*dx+dy*dy);
+      if(d<140){cx.strokeStyle="rgba(168,85,247,"+(.2*(1-d/140))+")";cx.beginPath();cx.moveTo(P[i].x,P[i].y);cx.lineTo(P[j].x,P[j].y);cx.stroke()}
+    }
+    cx.fillStyle=i%7===0?"rgba(52,211,153,.7)":"rgba(168,85,247,.65)";
+    cx.beginPath();cx.arc(P[i].x,P[i].y,i%7===0?2.2:1.6,0,6.283);cx.fill();
+  }
+  if(step)requestAnimationFrame(function(){draw(true)});
+}
+size();
+if(!reduce)draw(true);
+var rt;window.addEventListener("resize",function(){clearTimeout(rt);rt=setTimeout(size,200)});
+
+/* Dashboard — fictional, illustrative data only */
+var NET={
+  aurora:{n:"Aurora Chain",t:"Layer 1",tvl:[2.4,2.6,2.5,3.0,3.3,3.2,3.7,4.2],st:[1.6,1.7,1.9,2.0,2.2,2.3,2.5,2.8],act:[210,230,225,260,280,270,295,310]},
+  nimbus:{n:"Nimbus Rollup",t:"Layer 2",tvl:[1.1,1.4,1.8,2.1,2.6,3.0,3.4,3.9],st:[.6,.8,1.0,1.3,1.5,1.8,2.1,2.4],act:[480,540,610,690,740,820,880,960]},
+  vertex:{n:"Vertex Network",t:"Layer 1",tvl:[3.0,2.8,2.9,2.7,2.9,3.1,3.0,3.2],st:[1.2,1.1,1.2,1.3,1.2,1.4,1.5,1.5],act:[150,140,160,155,170,165,175,180]}
+};
+var MET={
+  tvl:{l:"Total Value Locked",f:function(v){return "$"+v.toFixed(1)+"B"}},
+  st:{l:"Stablecoin supply",f:function(v){return "$"+v.toFixed(1)+"B"}},
+  act:{l:"Network activity",f:function(v){return v+"K addr/day"}}
+};
+var sel="aurora",met="tvl";
+
+function build(){
+  var chips=$("#netChips"),k=$("#kpis");
+  Object.keys(NET).forEach(function(id){
+    var b=document.createElement("button");b.type="button";b.className="chip";b.dataset.net=id;b.textContent=NET[id].n+" · "+NET[id].t;
+    b.addEventListener("click",function(){sel=id;render()});chips.appendChild(b);
+  });
+  Object.keys(MET).forEach(function(id){
+    var b=document.createElement("button");b.type="button";b.className="kpi";b.dataset.met=id;
+    b.addEventListener("click",function(){met=id;render()});k.appendChild(b);
+  });
+}
+function render(){
+  var d=NET[sel],m=MET[met];
+  document.querySelectorAll(".chip").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.net===sel)});
+  document.querySelectorAll(".kpi").forEach(function(b){
+    var id=b.dataset.met,s=d[id];
+    b.setAttribute("aria-pressed",id===met);
+    b.innerHTML="<small>"+MET[id].l+" (example)</small><b>"+MET[id].f(s[s.length-1])+"</b>";
+  });
+  document.querySelectorAll(".concept").forEach(function(c){c.classList.toggle("on",c.dataset.m===met)});
+  $("#trendTitle").textContent=d.n+" · "+m.l+" (illustrative, 8 periods)";
+  $("#cmpTitle").textContent="Latest "+m.l+" by network";
+
+  /* SVG trend chart */
+  var s=d[met],lo=Math.min.apply(null,s)*.9,hi=Math.max.apply(null,s)*1.05,pts=[];
+  s.forEach(function(v,i){pts.push([24+i*(280/(s.length-1)),120-((v-lo)/(hi-lo))*100])});
+  var line=pts.map(function(p,i){return(i?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)}).join(" ");
+  var svg='<defs><linearGradient id="ar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a855f7" stop-opacity=".4"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/></linearGradient></defs>';
+  [0,1,2].forEach(function(i){svg+='<line x1="24" x2="304" y1="'+(20+i*50)+'" y2="'+(20+i*50)+'" stroke="rgba(255,255,255,.07)"/>'});
+  svg+='<path d="'+line+' L304 120 L24 120Z" fill="url(#ar)"/><path d="'+line+'" fill="none" stroke="#a855f7" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>';
+  pts.forEach(function(p,i){svg+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="'+(i===pts.length-1?5:3)+'" fill="'+(i===pts.length-1?"#34d399":"#0c0c14")+'" stroke="'+(i===pts.length-1?"#34d399":"#a855f7")+'" stroke-width="2"/><text class="axis" x="'+p[0]+'" y="140" text-anchor="middle">P'+(i+1)+'</text>'});
+  $("#trend").innerHTML=svg;
+  $("#trend").setAttribute("aria-label","Illustrative "+m.l+" trend for "+d.n+": from "+m.f(s[0])+" to "+m.f(s[s.length-1])+" over 8 periods");
+
+  /* Comparison bars */
+  var vals=Object.keys(NET).map(function(id){var a=NET[id][met];return a[a.length-1]}),mx=Math.max.apply(null,vals),h="";
+  Object.keys(NET).forEach(function(id,i){
+    h+='<button type="button" class="row" data-net="'+id+'" aria-pressed="'+(id===sel)+'"><span>'+NET[id].n+'</span><span class="track"><span class="fill" style="width:'+(vals[i]/mx*100).toFixed(0)+'%"></span></span><em>'+m.f(vals[i])+'</em></button>';
+  });
+  $("#cmp").innerHTML=h;
+}
+$("#cmp").addEventListener("click",function(e){var r=e.target.closest(".row");if(r){sel=r.dataset.net;render();var f=document.querySelector('.row[data-net="'+sel+'"]');if(f)f.focus()}});
+build();render();
+})();
+</script>
+</body>
+</html>
